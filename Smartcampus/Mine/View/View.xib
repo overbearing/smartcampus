@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="View">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_header" translatesAutoresizingMaskIntoConstraints="NO" id="90u-Sy-Jb6">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="Lut-yI-ggb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhs-3o-cpJ">
+                    <rect key="frame" x="144" y="17.5" width="67" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="ah5-5T-6Cc"/>
+                        <constraint firstAttribute="width" constant="67" id="rpS-Ny-Ygz"/>
+                    </constraints>
+                    <state key="normal" image="touxiang"/>
+                    <connections>
+                        <action selector="shouprofile:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wbu-1f-kII"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="林晓琳  603班" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crg-QC-6j9">
+                    <rect key="frame" x="0.0" y="99" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="于身为长物  于世为闲物" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU1-hi-KhW">
+                    <rect key="frame" x="0.0" y="132.5" width="355" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Zhs-3o-cpJ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5HB-hj-Sca"/>
+                <constraint firstAttribute="trailing" secondItem="90u-Sy-Jb6" secondAttribute="trailing" id="7Hw-rD-B5y"/>
+                <constraint firstAttribute="top" secondItem="Zhs-3o-cpJ" secondAttribute="top" constant="-17.5" id="8xO-AT-vg9"/>
+                <constraint firstItem="AU1-hi-KhW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CRs-IN-UIf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AU1-hi-KhW" secondAttribute="trailing" id="CXe-dn-RqE"/>
+                <constraint firstItem="90u-Sy-Jb6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gqd-cC-QTu"/>
+                <constraint firstItem="Crg-QC-6j9" firstAttribute="top" secondItem="Zhs-3o-cpJ" secondAttribute="bottom" constant="14.5" id="J7R-71-QMy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Crg-QC-6j9" secondAttribute="trailing" id="Ngt-Iy-39R"/>
+                <constraint firstItem="AU1-hi-KhW" firstAttribute="centerX" secondItem="Zhs-3o-cpJ" secondAttribute="centerX" id="SCB-oB-xPy"/>
+                <constraint firstItem="AU1-hi-KhW" firstAttribute="top" secondItem="Crg-QC-6j9" secondAttribute="bottom" constant="12.5" id="Sqk-Hh-6IX"/>
+                <constraint firstItem="90u-Sy-Jb6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lYG-IU-F8q"/>
+                <constraint firstItem="Crg-QC-6j9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uBg-Kg-PJF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headIcon" destination="Zhs-3o-cpJ" id="UpQ-lf-eGn"/>
+                <outlet property="name" destination="Crg-QC-6j9" id="H3p-J8-SAA"/>
+                <outlet property="sign" destination="AU1-hi-KhW" id="GBG-kU-2zo"/>
+            </connections>
+            <point key="canvasLocation" x="-83" y="-133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_header" width="375" height="151"/>
+        <image name="touxiang" width="233.33332824707031" height="233.33332824707031"/>
+    </resources>
+</document>

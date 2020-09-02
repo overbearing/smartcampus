@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CDHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="215"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-Rs-vFr" customClass="CDHeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="397" height="205"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon0" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-Qc-1R3">
+                            <rect key="frame" x="165" y="19.5" width="67" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="67" id="CNM-nH-Ho4"/>
+                                <constraint firstAttribute="width" constant="67" id="Rnr-h4-f0L"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="33.5"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="边成凯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neZ-Fe-ENI">
+                            <rect key="frame" x="172.5" y="109" width="52" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="604班" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpf-9U-Enf">
+                            <rect key="frame" x="180.5" y="143" width="36" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="于身为长物  于世为闲物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pu5-Iw-nQa">
+                            <rect key="frame" x="133.5" y="172.5" width="130" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Pu5-Iw-nQa" firstAttribute="top" secondItem="qpf-9U-Enf" secondAttribute="bottom" constant="10" id="1gV-Nx-pLf"/>
+                        <constraint firstItem="Pu5-Iw-nQa" firstAttribute="centerX" secondItem="qpf-9U-Enf" secondAttribute="centerX" id="ApV-jR-0Zs"/>
+                        <constraint firstItem="Z0p-Qc-1R3" firstAttribute="top" secondItem="SgE-Rs-vFr" secondAttribute="top" constant="19.5" id="SLa-6u-I7A"/>
+                        <constraint firstItem="qpf-9U-Enf" firstAttribute="centerX" secondItem="neZ-Fe-ENI" secondAttribute="centerX" id="k8x-O7-oMG"/>
+                        <constraint firstItem="neZ-Fe-ENI" firstAttribute="centerX" secondItem="SgE-Rs-vFr" secondAttribute="centerX" id="oyJ-w5-ccV"/>
+                        <constraint firstAttribute="bottom" secondItem="Pu5-Iw-nQa" secondAttribute="bottom" constant="17.5" id="rYl-GW-KSt"/>
+                        <constraint firstItem="qpf-9U-Enf" firstAttribute="top" secondItem="neZ-Fe-ENI" secondAttribute="bottom" constant="13.5" id="sNA-s9-5n3"/>
+                        <constraint firstItem="neZ-Fe-ENI" firstAttribute="top" secondItem="Z0p-Qc-1R3" secondAttribute="bottom" constant="22.5" id="sSl-jw-tdt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="SgE-Rs-vFr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5m3-jr-snV"/>
+                <constraint firstItem="Z0p-Qc-1R3" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="AyE-zH-Ja2"/>
+                <constraint firstItem="SgE-Rs-vFr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GjA-6S-eUe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SgE-Rs-vFr" secondAttribute="bottom" constant="10" id="tvm-7r-wEf"/>
+                <constraint firstItem="SgE-Rs-vFr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uIH-eo-E7g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="classname" destination="qpf-9U-Enf" id="ss9-Fl-j27"/>
+                <outlet property="head" destination="Z0p-Qc-1R3" id="ytu-a4-61I"/>
+                <outlet property="name" destination="neZ-Fe-ENI" id="qnt-df-iqo"/>
+                <outlet property="signname" destination="Pu5-Iw-nQa" id="pZN-Zd-wlH"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="-126.22767857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon0" width="220" height="220"/>
+    </resources>
+</document>
